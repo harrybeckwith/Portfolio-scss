@@ -1,0 +1,41 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
+  color: $base__color;
+}
+header {
+  @include clearfix;
+      margin: 40px 0px;
+      .fa {
+            font-size:em(24px);
+            @include transition(color, 0.35s, ease-in-out);
+
+        }
+}
+footer {
+  text-align: center;
+  font-size: em(14px);
+  color:#5c5c5c;
+  font-weight: 100;
+  margin: 40px 0px;
+}
+strong {
+  font-weight: 700;
+}
+a {
+      color: #212121;
+      text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6 {
+      color: #111111;
+}

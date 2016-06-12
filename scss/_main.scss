@@ -1,0 +1,152 @@
+// ==========================================================================
+// Main
+// ==========================================================================
+.container {
+    width:96%;
+    margin:0 auto;
+}
+p{
+        font-size: 17px;
+    line-height: 28px;
+    display: block;
+    padding: 0 0 12px;
+    margin: 0;
+}
+.logo, #social{
+    display:inline-block;
+
+}
+.logo {
+    float: left;
+    font-size:em(28px);
+    color:#646464;
+    cursor: pointer;
+    &:hover {
+        color:#212121;
+    }
+}
+#social {
+    float:right;
+    li {
+        display:inline;
+        margin:0px 16px;
+        a {
+             color: #d8d8d8;
+        }
+        &:last-child {
+            margin-right:0;
+        }
+    }
+}
+.fa-github-alt {
+    &:hover {
+        color: #000;
+    }
+}
+.fa-dribbble {
+    &:hover {
+        color: #ea4c89;
+    }
+}
+.fa-instagram {
+    &:hover {
+        color: #517fa4;
+    }
+}
+.fa-linkedin {
+    &:hover {
+        color: #007bb6;
+    }
+}
+.fa-envelope {
+    &:hover {
+        color: #4285F4;
+    }
+}
+.page-title {
+    text-align:left;
+    margin: 100px 0 60px;
+    .page-title__heading {
+        font-size: em(80px);
+    }
+    .page-title__underline {
+        width: 100px;
+        height: 10px;
+        background: #2196F3;
+        clear: both;
+        display: block;
+        margin: 10px 0;
+    }
+    .page-title__description {
+    font-size: em(26px);
+    color: #5c5c5c;
+    font-weight: 300;
+    margin: 12px 0 40px;
+    display: inline-block;
+    }
+}
+.portfolio {
+    @include clearfix;
+    margin-top:24px;
+    .portfolio__item {
+        float:left;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-bottom:16px;
+        img {
+            display:block;
+        }
+        &:nth-child(3n) {
+            margin-right:0;
+        }
+        &:nth-child(3n+1) {
+            clear:left;
+        }
+        h3 {
+            font-size: em(15px);
+            margin: 12px 0 24px;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+        a {
+            font-weight: bold;
+        }
+    }
+}
+::-moz-selection {
+    background: #FF7F50;
+}
+
+::selection {
+    background: #FF7F50;
+}
+.work {
+    @include clearfix;
+        margin-top: 40px;
+    margin-bottom: 40px;
+    h5 {
+        color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 24px 0 12px;
+    line-height: 1em;
+    }
+}
+.work__content {
+    float: left;
+    display: block;
+    margin-right: 2%;
+    width: 48%;
+
+    &:last-child {
+        margin-right:0;
+    }
+
+}
+.back-to {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 40px 0;
+}

@@ -1,0 +1,49 @@
+@media only screen and (min-width: 1220px) {
+    body {
+        width:1200px;
+        margin:0 auto;
+    }
+}
+@media only screen and (max-width: 769px) {
+    header {
+            margin: 20px 0px;
+    }
+.page-title {
+    text-align:center;
+    margin: 100px 0 60px;
+    .page-title__heading {
+        font-size: em(54px);
+    }
+    .page-title__underline {
+        margin: 10px auto;
+    }
+    .page-title__description {
+     font-size: em(26px);
+    }
+}
+    .portfolio {
+        .portfolio__item {
+            width:100%;
+        }
+    }
+    .container {
+        width:93%;
+    }
+    .work__content {
+        width:100%;
+        margin-right:0;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+        #social li {
+        margin: 0px 10px;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .main-image {
+        .container {
+            width:100%;
+        }
+    }
+}
